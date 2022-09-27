@@ -26,5 +26,7 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 # Копирует все файлы из рабочей директории на диске в рабочую директорию контейнера
 COPY . .
+
+ENV PYTHONPATH "${PYTHONPATH}:/usr/src/app"
 #CMD ["python", "manage.py", "runserver"]
 
