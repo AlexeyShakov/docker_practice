@@ -6,7 +6,7 @@ from publications.serializers import PublicationsSerializer
 from rest_framework.decorators import action
 from rest_framework.response import Response
 import debugpy
-
+import seaborn
 
 class PublicationsView(viewsets.ModelViewSet):
     queryset = Publications.objects.all()
@@ -15,4 +15,4 @@ class PublicationsView(viewsets.ModelViewSet):
     @action(detail=False, methods=['get'])  
     def kek(self, request):
         gf = "gdhd"
-        return Response("Че за хуйня")
+        return Response("Че за dada")
