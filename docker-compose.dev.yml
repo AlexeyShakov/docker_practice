@@ -7,7 +7,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     ports:
-      - "54321:5432"
+      - "5432:5432"
     environment:
       POSTGRES_DB: publications
       POSTGRES_USER: publications

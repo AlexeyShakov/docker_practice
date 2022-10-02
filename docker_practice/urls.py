@@ -17,11 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from rest_framework.routers import DefaultRouter
 
-from publications.views import PublicationsView
+from publications.views import PublicationsView, TemplateView, CategoryView
 
 router = DefaultRouter()
 router.register(r'public', PublicationsView)
-
+router.register(r'template', TemplateView)
+router.register(r'category', CategoryView)
 
 
 urlpatterns = [
