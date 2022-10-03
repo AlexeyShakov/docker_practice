@@ -18,11 +18,25 @@ from django.urls import path
 from rest_framework.routers import DefaultRouter
 
 from publications.views import PublicationsView, TemplateView, CategoryView
+from nested_practise.views import AvatarView, SiteView, AccessKeyView, ProfileView, UserView
+from unique_practice.views import ChildView, ParentView
 
 router = DefaultRouter()
 router.register(r'public', PublicationsView)
 router.register(r'template', TemplateView)
 router.register(r'category', CategoryView)
+
+
+router.register(r'avatar', AvatarView)
+router.register(r'site', SiteView)
+router.register(r'access', AccessKeyView)
+router.register(r'profile', ProfileView)
+router.register(r'user', UserView)
+
+
+router.register(r"child", ChildView)
+router.register(r"parent", ParentView)
+
 
 
 urlpatterns = [

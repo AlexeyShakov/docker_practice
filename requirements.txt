@@ -2,4 +2,4 @@ django
 djangorestframework
 psycopg2
 debugpy
-seaborn
+drf-writable-nested

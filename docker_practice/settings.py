@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'publications',
     'rest_framework',
+    'nested_practise',
+    'unique_practice',
 ]
 
 
